@@ -37,13 +37,14 @@ div{
 
 button, input{
   margin-right: 20px;
+  font-family: cursive;
 }
 
 h1{
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
   /* transform: rotate(20deg); */
-  font-family: monospace;
+  font-family: fantasy;
 
 }
 
@@ -54,7 +55,7 @@ h1{
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
-  border: lime dotted 1px;
+  border: lime solid 1px;
   text-align: end;
 
 }
@@ -95,4 +96,7 @@ body{
 }
 
 
-  
+  a{
+    font-size: 20px;
+    color: chartreuse;
+  }
