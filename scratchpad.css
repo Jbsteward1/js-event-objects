@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+div{
+  /* border: 1px solid black; */
+}
+
+.navi{
+  display: flex;
+  justify-content:space-between
+}
+
+.weathergrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 700px;
+}
+ 
+.homes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 698px;
+  justify-content: space-around;
+  font-size: 27px;
+  color: lime;
+  
+}
+
+.selection{
+  display: flex;
+  justify-content: flex-end;
+}
+
+button, input{
+  margin-right: 20px;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  /* transform: rotate(20deg); */
+  font-family: monospace;
+
+}
+
+.data{
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  border: lime dotted 1px;
+  text-align: end;
+
+}
+
+
+.weatherdata{
+  display: flex;
+  justify-content: space-around;
+  height: 640px;
+  align-items: center;
+}
+body{
+  background-image: linear-gradient(blue, grey,black);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+.insideBox{
+  padding-top: 100px;
+  color: chartreuse;
+ 
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+
+  
