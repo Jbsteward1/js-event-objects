@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scratchpad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css"
+        integrity="sha512-r/Gan7PMSRovDus++vDS2Ayutc/cSdl268u047n4z+k7GYuR7Hiw71FsT3QQxdKJBVHYttOJ6IGLnlM9IoMToQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scratchpad2.js" async></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="content">
+
+        <div class="navi">
+            <div>
+                <h1>Fantasic Four Weather</h1>
+                <!-- <img src="https://apprecs.org/ios/images/app-icons/256/b4/316415412.jpg" alt=""> -->
+
+            </div>
+            <div><a href="https://weather.com/">External Resource</a></div>
+        </div>
+
+        <div class="weathergrid">
+            <div>
+                <ul class="homes">
+                    <li>Atlanta</li>
+                    <p id="atl"></p>
+                    <li>Chicago</li>
+                    <p id="chi"></p>
+                    <li>Charlotte</li>
+                    <p id="char"></p>
+                    <li>Ohio</li>
+                    <p id="oh"></p>
+                </ul>
+            </div>
+            <div>
+                <div class="selection">
+                    <input id="input" type="text" placeholder="Search U.S. City">
+                    <button id="submit">Submit</button>
+                </div>
+                <div>
+                    <div>
+                        <h1 id="cityFor">City Forecast</h1>
+                    </div>
+                    <div class="weatherdata">
+
+                        <!-- <i class="cid-temperature"></i> -->
+                        <div class="data" onmouseover="bigBox(this)" onmouseout="littleBox(this)">
+                            <i class="wi wi-thermometer" style="font-size: 100px; color: chartreuse;"></i>
+                            <div id="temp" class="insideBox">
+                            </div>
+                        </div>
+                        <div class="data" onmouseover="bigBox(this)" onmouseout="littleBox(this)">
+                            <i class="wi wi-day-rain" style="font-size: 100px; color: chartreuse;"></i>
+                            <div id="rnc" class="insideBox">
+                            </div>
+                        </div>
+                        <div class="data" onmouseover="bigBox(this)" onmouseout="littleBox(this)">
+                            <i class="wi wi-humidity" style="font-size: 100px; color: chartreuse;"></i>
+                            <div id="humid" class="insideBox">
+                            </div>
+                        </div>
+                        <div class="data" onmouseover="bigBox(this)" onmouseout="littleBox(this)">
+                            <i class="wi wi-day-windy" style="font-size: 100px; color: chartreuse;"></i>
+                            <div id="wind" class="insideBox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
